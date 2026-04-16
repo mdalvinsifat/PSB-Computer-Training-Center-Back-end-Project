@@ -19,8 +19,14 @@ dotenv.config()
 app.use(morgan("dev"))
 
 
-const PORT = process.env.PORT || 3000 ; 
 ConnectDB()
+
+app.get("/", (req, res) => {
+    res.send("Server Running Successfully");
+});
+
+
+const PORT = process.env.PORT || 3000 ; 
 
 app.use("/admission", router)
 app.use("/contact", contact)
