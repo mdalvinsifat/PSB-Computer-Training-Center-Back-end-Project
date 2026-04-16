@@ -13,7 +13,7 @@ const app = express()
 
 app.use(express.json())
 app.use(cors({
-  origin: 'http://localhost:5173' // your React app URL & port
+  origin: 'https://psb-computer-training-center-front.vercel.app/' 
 }));
 dotenv.config()
 app.use(morgan("dev"))
