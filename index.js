@@ -13,7 +13,7 @@ const app = express()
 
 app.use(express.json())
 app.use(cors({
-  origin: 'https://psb-computer-training-center-front.vercel.app/' 
+  origin: 'https://psb-computer-training-center-front.vercel.app' 
 }));
 dotenv.config()
 app.use(morgan("dev"))
